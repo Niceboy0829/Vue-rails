@@ -6,9 +6,6 @@ export const URLS = {
     fields: {groups: 'admin/field_groups', field: 'admin/fields'},
     tags: 'admin/tags',
   },
-  user: {
-    leads: 'entities/leads'
-  }
 }
 export const ADMIN_FIELD_AS = {
   'Short Answer': 'string' , 
