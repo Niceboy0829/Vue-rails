@@ -5,10 +5,12 @@
         <slot name="imageProfile"></slot>
       </div>
     </md-card-header>
+
     <md-card-content>
       <slot name="title"></slot>
       <slot name="content"></slot>
     </md-card-content>
+
     <md-card-actions>
       <slot name="footer"></slot>
     </md-card-actions>
@@ -30,7 +32,7 @@ export default {
     };
   },
   beforeMount() {
-    setTimeout(this.showCard, 100);
+    setTimeout(this.showCard, 400);
   },
   methods: {
     showCard: function() {

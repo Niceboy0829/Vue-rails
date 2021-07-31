@@ -86,7 +86,6 @@ export default {
         _this.saved = true
         _this.sending = false
         _this.clearForm()
-        _this.$router.replace('/admin')
       }, 1500)
     },
     submit() {

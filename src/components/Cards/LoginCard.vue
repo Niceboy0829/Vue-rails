@@ -31,7 +31,7 @@ export default {
     };
   },
   beforeMount() {
-    setTimeout(this.showCard, 100);
+    setTimeout(this.showCard, 400);
   },
   methods: {
     showCard: function() {

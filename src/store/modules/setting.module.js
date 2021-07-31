@@ -2,8 +2,6 @@ import { act_setting } from "../types/actions.type";
 import { mut_setting } from "../types/mutations.type";
 
 const state = {
-  lock: false,
-  nav: 'user',
   theme: {
     sidebarMini: true,
     sidebarImg: false,
@@ -38,12 +36,6 @@ const getters = {
 };
 const actions = {
   /////////////////// none change state && only API //////////////////
-  [act_setting.lock](context) {
-    context.commit(mut_setting.lock)
-  },
-  [act_setting.nav](context) {
-    context.commit(mut_setting.nav)
-  },
   [act_setting.theme](context, params) {
     context.commit(mut_setting.theme, params)
   },
@@ -51,12 +43,6 @@ const actions = {
 };
 
 const mutations = {
-  [mut_setting.lock](state) {
-    state.lock = !state.lock
-  },
-  [mut_setting.nav](state) {
-    state.nav = state.nav === 'user' ? 'admin' : 'user'
-  },
   [mut_setting.theme](state, params) {
     Object.assign(state.theme, params)
     window.localStorage.setItem('theme', state.theme);

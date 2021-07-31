@@ -25,7 +25,7 @@
     <CreateEditField 
       :openModal="openModal" 
       :gid="Number(group.id)"
-      :field="adFieldsStates.ceFieldData[group.id] && adFieldsStates.ceFieldData[group.id]['new'] 
+      :filed="adFieldsStates.ceFieldData[group.id] && adFieldsStates.ceFieldData[group.id]['new'] 
         ? adFieldsStates.ceFieldData[group.id]['new'] : {id: 'new'}"
       @closeCEFieldModal="toggleCEField" />
     <br/>

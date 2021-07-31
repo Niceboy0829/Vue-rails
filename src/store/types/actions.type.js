@@ -6,8 +6,6 @@ export const REGISTER = "register";
 export const UPDATE_USER = "updateUser";
 //common--------------------------------------
 export const act_setting = {
-  lock: 'ASLock',
-  nav: 'ASNav',
   theme: 'AStheme',
 }
 //admin----------------------------------------
@@ -60,8 +58,7 @@ export const act_user = {
     create: 'AULeadCreate',
     update: 'AULeadUpdate',
     delete: 'AULeadDelete',
-    convert: 'AULeadConvert',
-    reject: 'AULeadReject'
+    status: 'AULeadStatus'
   }
 }
 ///////////////////////////////////////////////
