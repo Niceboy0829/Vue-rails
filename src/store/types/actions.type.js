@@ -6,6 +6,8 @@ export const REGISTER = "register";
 export const UPDATE_USER = "updateUser";
 //common--------------------------------------
 export const act_setting = {
+  lock: 'ASLock',
+  nav: 'ASNav',
   theme: 'AStheme',
 }
 //admin----------------------------------------
@@ -49,6 +51,17 @@ export const act_admin = {
     get: 'AATagsGet',
     update: 'AATagsUpdate',
     delete: 'AATagsDelete',
+  }
+}
+export const act_user = {
+  leads: {
+    editId: 'AULeaseEditID',
+    search: 'AULeadSearch',
+    create: 'AULeadCreate',
+    update: 'AULeadUpdate',
+    delete: 'AULeadDelete',
+    convert: 'AULeadConvert',
+    reject: 'AULeadReject'
   }
 }
 ///////////////////////////////////////////////

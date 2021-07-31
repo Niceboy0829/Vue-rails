@@ -4,6 +4,8 @@ export const PURGE_AUTH = "logOut";
 //common------------------------------------------
 export const SET_ERROR = "setError";
 export const mut_setting = {
+  lock: 'MSLock',
+  nav: 'MSNav',
   theme: 'MStheme',
 }
 //admin-------------------------------------------
@@ -36,6 +38,14 @@ export const mut_admin = {
   tags: {
     editID: 'MATagsEditID',
     get: 'MATagsGet',
+  }
+}
+export const mut_user = {
+  viewsearch: 'MAUsersViewSearch',
+  leads: {
+    getID: 'MULeadsEditID',
+    getall: 'MULeadsGetaAll',
+    getone: 'MULeadsGetOne',
   }
 }
 /////////////////////////////////////////////////////
