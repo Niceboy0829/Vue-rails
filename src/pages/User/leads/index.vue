@@ -45,6 +45,7 @@ export default {
       // store.dispatch(act_user.groups.get),
       // store.dispatch(act_user.viewsearch, true)
     ]).then(() => {
+      console.log('after axios', store.getters.urLeadsStates)
       next();
     });
   },
@@ -53,7 +54,9 @@ export default {
     };
   },
   methods: {
-    
+    test() {
+      console.log(store.getters.urLeadsStates)
+    },
     createTask() {
       alert('view create form...');
     },
