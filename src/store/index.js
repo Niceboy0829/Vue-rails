@@ -10,9 +10,6 @@ import adminGroups from './modules/admin.module/groups.module'
 import adminFields from './modules/admin.module/fields.module'
 import adminTags from './modules/admin.module/tags.module'
 import userLeads from './modules/user.module/leads.module'
-import userCampaigns from './modules/user.module/campaigns.module'
-import userAccounts from './modules/user.module/accounts.module'
-import userContacts from './modules/user.module/contacts.module'
 
 Vue.use(Vuex);
 
@@ -25,9 +22,6 @@ export default new Vuex.Store({
     adminGroups,
     adminFields,
     adminTags,
-    userLeads,
-    userCampaigns,
-    userAccounts,
-    userContacts
+    userLeads
   }
 });

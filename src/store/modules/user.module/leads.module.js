@@ -12,8 +12,7 @@ const state = {
     histories: [],
   },
   editID: -1,
-  keyword: '',
-  page : 1
+  keyword: ''
 };
 
 const getters = {
